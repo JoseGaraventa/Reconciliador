@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorry</title>
-    <link rel="stylesheet" href="/style/style.css
-    ">
+    <link rel="stylesheet" href="styles.css">
+    <title>¿Me perdonas?</title>
 </head>
 <body>
-    <h2>¿ Me perdonas ?</h2>
-    
+
+    <div class="container">
+        <h1 id="titulo">¿Me perdonas?</h1>
+        <div class="opciones">
+            <div class="opcion" id="si" onclick="responder('si')">Sí</div>
+            <div class="opcion" id="no" onmouseover="moverCuadro()" onclick="responder('no')">No</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Se crea la estructura básica de una página web con un contenedor (<div class="container">) que contiene un título (<h1>¿Me perdonas?</h1>) y dos opciones (<div class="opciones">).
+    Las opciones son dos <div> con los identificadores si y no, respectivamente, y tienen eventos onclick y onmouseover asociados a funciones de JavaScript -->

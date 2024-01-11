@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.opciones {
+    margin-top: 20px;
+}
+
+.opcion {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.opcion:hover {
+    transform: scale(1.1);
+}
+
+#no:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/*   Se define el estilo de la página, centrándola y dando un fondo claro.
+El título (h1) tiene un color específico.
+Las opciones tienen un estilo básico con un borde y un efecto de escala al pasar el ratón sobre ellas.
+La opción "No" tiene un estilo de animación (shake) cuando el ratón pasa sobre ella */
